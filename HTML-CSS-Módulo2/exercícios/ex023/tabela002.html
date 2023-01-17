@@ -13,6 +13,7 @@
         table{
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
         td, th{
@@ -21,8 +22,14 @@
         }
 
         thead, tfoot{
-            background-color: gray;
+            background-color: rgb(88, 88, 88);
             color: white;
+        }
+
+        thead > tr > th{
+            position: sticky;
+            top: -1px;
+            background-color: rgb(88, 88, 88);
         }
 
         tbody > tr:nth-child(even){ /* Efeito zebrado odd(par) ou even(ímpar) ou 2n = de duas em duas linhas */
